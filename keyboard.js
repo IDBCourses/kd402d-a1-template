@@ -2,8 +2,8 @@
 // setup() in script.js connects these functions to the keyboard.
 
 // Runs every time a key goes down.
-async function keyDown(event) {
-  await Tone.start(); // browsers only allow sound after the player has pressed something
+function keyDown(event) {
+  Tone.start(); // browsers only allow sound after the player has pressed something
 
   // Holding a key down sends keydown again and again. Only react to the first one.
   if (event.repeat === false) {
