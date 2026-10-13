@@ -27,15 +27,13 @@ Due **Tuesday 20 October**. Hand in on Canvas: a `.zip` of `main`, and the link 
 
 ### The files
 
-| File            | What goes in it                                                 |
-| --------------- | --------------------------------------------------------------- |
-| `script.js`     | State, settings, and `setup()`, which starts everything         |
-| `instrument.js` | The sound: Tone.js instruments and the functions that play them |
-| `keyboard.js`   | The controls: what happens when a key goes down or comes up     |
-| `index.html`    | The page. Loads Tone.js and the three files above               |
-| `style.css`     | How the page looks                                              |
+| File         | What goes in it                                                          |
+| ------------ | ------------------------------------------------------------------------ |
+| `script.js`  | All of your code: settings, state, the sound, the controls and `setup()` |
+| `index.html` | The page. Loads Tone.js and `script.js`                                  |
+| `style.css`  | How the page looks                                                       |
 
-The files share their variables: a name made in one file can be used in the others. Add more `.js` files if it helps your group split the work, and add a `<script>` line for each one in `index.html`, before `script.js`.
+`script.js` is split into sections with headings. Agree who works in which section, so you get fewer conflicts.
 
 Allowed: vanilla JavaScript and Tone.js. Not allowed: other libraries, and CSS transitions or animations.
 
