@@ -27,11 +27,11 @@ Due **Tuesday 20 October**. Hand in on Canvas: a `.zip` of `main`, and the link 
 
 ### The files
 
-| File         | What goes in it                                                          |
-| ------------ | ------------------------------------------------------------------------ |
-| `script.js`  | All of your code: settings, state, the sound, the controls and `setup()` |
-| `index.html` | The page. Loads Tone.js and `script.js`                                  |
-| `style.css`  | How the page looks                                                       |
+| File         | What goes in it                                                                 |
+| ------------ | ------------------------------------------------------------------------------- |
+| `script.js`  | All of your code: settings, state, the sound, `update()`, `use()` and `setup()` |
+| `index.html` | The page. Loads Tone.js and `script.js`                                         |
+| `style.css`  | How the page looks                                                              |
 
 `script.js` is split into sections with headings. Agree who works in which section, so you get fewer conflicts.
 
@@ -41,7 +41,7 @@ Allowed: vanilla JavaScript and Tone.js. Not allowed: other libraries, and CSS t
 
 1. Open `index.html`, then run **Live Preview: Show Preview (External Browser)** from the Command Palette (`Ctrl+Shift+P` / `Cmd+Shift+P`).
 2. Open the browser's developer tools (`F12`, or `Cmd+Option+I` on a Mac) and click the **Console** tab.
-3. Click on the page, then hold down `A`. You should hear a note, and see `Key down: a` in the console.
+3. Click on the page, then hold down `A`. You should hear a note, and see `keydown a` in the console.
 
 ### The live page
 
