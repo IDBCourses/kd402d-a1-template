@@ -5,6 +5,8 @@
  *   settings — the "fixed" parts of your program
  *   state    — the parts of your program that change over time
  *   sound    — the Tone.js instruments and effects
+ *   update   — updates the state every 100ms, if necessary
+ *   use      — applies the state to make sound every 100ms, if necessary
  *   controls — what happens when a key goes down or comes up
  *   setup    — starts everything
  *
@@ -30,7 +32,21 @@ const exampleNote = "C4"; // the note it plays
 // Make the instruments and plug them into the speakers.
 const synth = new Tone.PolySynth(Tone.Synth).toDestination(); // can play several notes at once
 
-// ---------- Controls ----------
+// ---------- Update ----------
+// Update the state. This is called every 100ms.
+function update() {
+  // Example: replace this with your own instrument.
+
+  setTimeout(update, 100); // call update() again in 100 milliseconds
+}
+
+// ---------- Use ----------
+// Use the state to make sound. This is called every 100ms.
+function use() {
+  setTimeout(use, 100); // call use() again in 100 milliseconds
+}
+
+// ---------- Controls (Event Handlers) ----------
 // Runs every time a key goes down.
 function keyDown(event) {
   Tone.start(); // browsers only allow sound after the player has pressed something
